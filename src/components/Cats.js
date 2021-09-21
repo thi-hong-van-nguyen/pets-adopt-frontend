@@ -6,17 +6,18 @@ import Pet from './Pet';
 import { fetchCats } from '../actions';
 
 function Cats(props) {
+    const { fetchCats, cats, isLoading } = props;
     useEffect(() => {
-        props.fetchCats(dummyData.cats)
+        fetchCats(dummyData.cats)
     }, []);
 
     return (
         <div>
             <h1>Featured Pets</h1>
-            {props.isLoading
+            {isLoading
                 ? <div>Loading...</div>
                 : <div className='pet-cards-container'>
-                    {props.cats.map(cat => {
+                    {cats.map(cat => {
                         return (<Pet pet={cat} key={cat.id} />)
                     })}
                 </div>

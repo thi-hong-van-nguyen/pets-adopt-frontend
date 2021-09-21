@@ -6,19 +6,18 @@ import Pet from './Pet';
 import { fetchDogs } from '../actions';
 
 function Dogs(props) {
+    const { fetchDogs, dogs, isLoading } = props;
     useEffect(() => {
-        props.fetchDogs(dummyData.dogs)
+        fetchDogs(dummyData.dogs)
     }, []);
-
-    console.log(props.dogs)
 
     return (
         <div>
             <h1>Featured Pets</h1>
-            {props.isLoading
+            {isLoading
                 ? <div>Loading...</div>
                 : <div className='pet-cards-container'>
-                    {props.dogs.map(dog => {
+                    {dogs.map(dog => {
                         return (<Pet pet={dog} key={dog.id} />)
                     })}
                 </div>

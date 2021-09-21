@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 export default function Pet(props) {
-    const { age, breed, description, id, location, name, sex, url } = props.pet;
+    const { age, id, name, sex, url } = props.pet;
     const { push } = useHistory();
 
     const handleClick = () => {
@@ -15,7 +15,6 @@ export default function Pet(props) {
             <div>
                 <h3>{name}</h3>
                 <div>{sex}, {age}</div>
-                <div>{location}</div>
             </div>
         </div>
     )

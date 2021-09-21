@@ -28,7 +28,7 @@ const dummyData = {
             age: 'puppy',
             location: 'San Jose, CA',
             description: 'cute girl',
-            url: 'https:\/\/images.dog.ceo\/breeds\/chow\/n02112137_2619.jpg'
+            url: 'http://cdn.shopify.com/s/files/1/2394/1045/articles/16416635479_57ebb7b885_b_600x.jpg?v=1593175702'
         },
         {
             id: 4,
@@ -48,7 +48,7 @@ const dummyData = {
             age: 'puppy',
             location: 'San Jose, CA',
             description: 'cute girl',
-            url: 'https:\/\/images.dog.ceo\/breeds\/lhasa\/n02098413_14565.jpg'
+            url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F07%2F22%2Flhasa-apso-pink-bow-tongue-out-1246138969-2000.jpg'
         },
         {
             id: 6,
@@ -58,7 +58,7 @@ const dummyData = {
             age: 'puppy',
             location: 'San Jose, CA',
             description: 'cute girl',
-            url: 'https:\/\/images.dog.ceo\/breeds\/akita\/Akita_Dog.jpg'
+            url: 'https://www.familylifeshare.com/wp-content/uploads/2020/02/How-Much-Sleep-Should-an-Akita-Have.jpg'
         },
     ],
     cats: [
