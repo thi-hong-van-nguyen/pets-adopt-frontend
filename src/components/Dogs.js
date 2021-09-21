@@ -1,7 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 
-export default function Dogs() {
+import dummyData from '../services/dummyData';
+import Pet from './Pet';
+import { fetchDogs } from '../actions';
+
+function Dogs(props) {
+    useEffect(() => {
+        props.fetchDogs(dummyData.dogs)
+    }, []);
+
+    console.log(props.dogs)
+
     return (
-<div>Dogs List</div>
+        <div>
+            <h1>Featured Pets</h1>
+            {props.isLoading
+                ? <div>Loading...</div>
+                : <div className='pet-cards-container'>
+                    {props.dogs.map(dog => {
+                        return (<Pet pet={dog} key={dog.id} />)
+                    })}
+                </div>
+            }
+
+        </div>
     )
+};
+
+const mapStateToProps = state => {
+    return ({
+        dogs: state.dogData.dogs,
+        isLoading: state.dogData.isLoading
+    });
 }
+
+export default connect(mapStateToProps, { fetchDogs })(Dogs);

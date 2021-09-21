@@ -10,6 +10,8 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Logout from './components/Logout';
 import Home from './components/Home';
+import Footer from './components/Footer';
+import Details from './components/Details';
 
 import './App.css';
 
@@ -19,6 +21,9 @@ function App() {
       <Header />
 
       <Switch>
+        <Route path='/pets/:id'>
+          <Details />
+        </Route>
 
         <Route path='/dogs'>
           <Dogs />
@@ -56,6 +61,8 @@ function App() {
         </Route>
 
       </Switch>
+
+      <Footer />
     </div>
   );
 }
