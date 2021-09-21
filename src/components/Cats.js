@@ -3,13 +3,14 @@ import { connect } from 'react-redux';
 
 import dummyData from '../services/dummyData';
 import Pet from './Pet';
-import { fetchCats } from '../actions';
+import { fetchCats, fetchDogs } from '../actions';
 
 function Cats(props) {
     const { fetchCats, cats, isLoading } = props;
+
     useEffect(() => {
         fetchCats(dummyData.cats)
-    }, []);
+    }, [fetchCats]);
 
     return (
         <div>

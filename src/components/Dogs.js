@@ -9,7 +9,7 @@ function Dogs(props) {
     const { fetchDogs, dogs, isLoading } = props;
     useEffect(() => {
         fetchDogs(dummyData.dogs)
-    }, []);
+    }, [fetchDogs]);
 
     return (
         <div>
