@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import dummyData from '../services/dummyData';
 import Pet from './Pet';
-import { fetchCats, fetchDogs } from '../actions';
+import { fetchCats } from '../actions';
 
 function Cats(props) {
     const { fetchCats, cats, isLoading } = props;
