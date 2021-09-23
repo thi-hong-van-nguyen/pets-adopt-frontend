@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+header {
+    width: 100%;
+    border-bottom: solid rgba(255, 145, 0, 0.3) 5px;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5% 0;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* .header > * {
+    flex-basis: 100%;
+    border: red solid 1px;
+} */
+
+.logo-slogan-container {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+#slogan span {
+    padding: 1.2px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#slogan-1, #slogan-3, #slogan-5{
+    color: rgba(245, 53, 5, 1)
+}
+
+#slogan-2, #slogan-4 {
+    color: rgba(247, 127, 0, 1)
+}
+
+
+/***** nav links ***********/
+.nav-links {
+    flex: 1;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;;
+}
+
+.nav-links ul li {
+    padding: 2%;
+    font-size: 1.3rem;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.nav-links ul li a::after {
+    content: '';
+    display: block;
+    height: 7px;
+    width: 0%;
+    background:linear-gradient(rgba(245, 53, 5, 1), rgba(245, 53, 5, 0.8), rgba(245, 53, 5, 0.6));
+    transition: 0.3s
+}
+
+.nav-links ul li a:hover::after {
+    content: '';
+    display: block;
+    height: 7px;
+    width: 100%;
+    background:(rgba(245, 53, 5, 1), rgba(245, 53, 5, 0.8), rgba(245, 53, 5, 0.6))
+}
+
+/*************** LOG IN, LOG OUT MENU **********/
+.login-logout-menu {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-logout-menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logout-menu ul li{
+    list-style: none;
+    border: #f8961e;
+    background-color: #f8961e;
+    padding: 3% 4%;
+    color: #fff;
+    margin-right: 10px;
+    /* box-shadow: 0 5px 5px 5px rgba(255, 145, 0, 0.1); */
+}
+
+.login-logout-menu ul li:nth-child(2){
+    border: #f3722c;
+    background-color: #f3722c;
+    color: #ae2012;
+}
+
+#signup:hover, #login:hover, #logout:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.login-logout-menu ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+}
+
+#login-as{
+    font-size: 1rem;
+    color: #ae2012;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
