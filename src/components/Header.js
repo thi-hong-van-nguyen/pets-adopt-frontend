@@ -6,7 +6,10 @@ export default function Header() {
         <header>
             <div className='header'>
                 <div className='logo-slogan-container'>
-                    <div><img id='logo' src='logopaw.PNG' alt='paw' /></div>
+                    <div>
+                        <img id='logo' src='logopaw.PNG' alt='paw' />
+                        <div id='site-name'>ADOPT ME</div>
+                    </div>
 
                     <div id='slogan'>
                         <span id='slogan-1'>From</span>

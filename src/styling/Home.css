@@ -1,29 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
 #main {
     width: 100vw;
-    height: 100vh;
+    margin: 0 auto;
 }
-/*
-.get-started-container {
-    background: url('/public/topcontent.PNG');
-    background-color: linear-gradient(to right, blue, pink);
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 500px;
-    position: relative;
-} */
 
+/********* TOP CONTENT ***********/
 .get-started-container{
-    position: relative;
-}
-.get-started-container img {
     width: 100%;
-    object-fit: cover;
-    position: relative
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay {
+    background: url('https://i.ibb.co/hHtd790/topcontent.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(60%);
+    opacity: 0.8;
+    position: absolute
 }
 
 .get-started {
+    height: 100%;
+    width: 1200px;
+    z-index: 1;
+}
+
+#get-started-text {
+    height: 100%;
+    width: 100%;
+    padding: 3% 0 0 0;
+}
+
+.get-started h1, .get-started div {
+    color: white;
+    text-shadow: 2px 2px rgba(247, 127, 0, 0.5);
+    padding: 0 0 0.5% 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Mukta', sans-serif;
+}
+
+.get-started button {
+    color: white;
+    margin: 1.5% 0;
+    padding: 10px 30px;
+    background: #f77f00;
+    border: solid #f77f00 1px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.get-started button:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+/************** pet-care-container *****************/
+.pet-care-container {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pet-care {
     position: absolute;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: -50px;
+    z-index: 1;
+    background-color: rgba(247, 127, 0, 1);
+    border-radius: 15px;
+}
+
+.pet-care a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.pet-care a:first-child {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    padding: 3% 0 0 5%;
+    background-color: rgba(247, 62, 0, 1);
+    border: solid rgba(247, 62, 0, 1) 1px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#pet-care-1::before {
+    content: '';
+    position: absolute;
+    right: -50px;
     top: 0;
-    left: 0
+    width: 0;
+    height: 0;
+    border-left: 50px solid rgba(247, 62, 0, 1);
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+#pet-care-2 {
+    width: 25%;
+    padding: 0 0 2% 0;
+    text-align: center;
+}
+
+#pet-care-3, #pet-care-4 {
+    flex: 1;
+    height: 100%;
+    padding: 1%;
+    border-left: red solid 1px;
+    text-align: center;
+}
+
+.fas {
+    padding: 1%;
+    font-size: 48px;
+    color: #fff;
+    transform: scaleX(-1)
 }

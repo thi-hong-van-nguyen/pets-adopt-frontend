@@ -2,24 +2,17 @@
 
 header {
     width: 100%;
-    border-bottom: solid rgba(255, 145, 0, 0.3) 5px;
 }
-
-
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5% 0;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* .header > * {
-    flex-basis: 100%;
-    border: red solid 1px;
-} */
 
 .logo-slogan-container {
     display: flex;
@@ -29,15 +22,26 @@ header {
     justify-content: center;
 }
 
+.logo-slogan-container div:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+#site-name {
+    padding-top: 20px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+}
+
 #logo {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 #slogan span {
-    padding: 1.2px;
-    font-family: 'Architects Daughter', cursive;
-    font-weight: bold;
+    padding: 0 2px 0 0;
+    /* font-family: 'Architects Daughter', cursive; */
+    /* font-weight: bold; */
     font-size: 1.2rem;
 }
 
@@ -66,7 +70,6 @@ header {
 
 .nav-links ul li {
     padding: 2%;
-    font-size: 1.3rem;
 }
 
 .nav-links ul li a {
@@ -74,6 +77,7 @@ header {
     color: inherit;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 
@@ -97,7 +101,7 @@ header {
 /*************** LOG IN, LOG OUT MENU **********/
 .login-logout-menu {
     display: flex;
-    width: 30%;
+    width: 28%;
     justify-content: space-between;
     align-items: center;
 }
@@ -113,7 +117,7 @@ header {
     list-style: none;
     border: #f8961e;
     background-color: #f8961e;
-    padding: 3% 4%;
+    padding: 2% 4% 3% 4%;
     color: #fff;
     margin-right: 10px;
     /* box-shadow: 0 5px 5px 5px rgba(255, 145, 0, 0.1); */
@@ -133,11 +137,11 @@ header {
 .login-logout-menu ul li a{
     text-decoration: none;
     color: inherit;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
 }
 
 #login-as{
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #ae2012;
     background-color: white;
 }

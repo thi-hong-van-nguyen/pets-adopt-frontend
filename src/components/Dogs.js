@@ -10,6 +10,7 @@ function Dogs(props) {
     useEffect(() => {
         fetchDogs(dummyData.dogs)
     }, [fetchDogs]);
+    console.log('Dogs:', dogs)
 
     return (
         <div>
