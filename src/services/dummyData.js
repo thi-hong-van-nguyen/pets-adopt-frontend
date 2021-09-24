@@ -8,21 +8,21 @@ const dummyData = {
             age: 'puppy',
             location: 'San Jose, CA',
             description: 'cute girl',
-            url: 'https://images.dog.ceo//breeds//husky//n02110185_6473.jpg'
+            url: 'https://www.wideopenpets.com/wp-content/uploads/2020/12/How-Much-Do-Husky-Puppies-Cost.png'
         },
         {
             id: 2,
-            name: 'Lyly',
+            name: 'Pepa',
             sex: 'male',
             breed: 'doberman',
             age: 'senior',
             location: 'San Jose, CA',
             description: 'cute guy',
-            url: 'https://images.dog.ceo//breeds//doberman//n02107142_7300.jpg'
+            url: 'https://www.dobermanplanet.com/wp-content/uploads/2020/08/Doberman-Sleeping-with-Teddy-Bear-Large.jpg'
         },
         {
             id: 3,
-            name: 'Lyly',
+            name: 'Luna',
             sex: 'female',
             breed: 'chow',
             age: 'puppy',
@@ -32,8 +32,8 @@ const dummyData = {
         },
         {
             id: 4,
-            name: 'Lyly',
-            sex: 'female',
+            name: 'Barney',
+            sex: 'male',
             breed: 'terrier-bedlington',
             age: 'puppy',
             location: 'San Jose, CA',
@@ -42,7 +42,7 @@ const dummyData = {
         },
         {
             id: 5,
-            name: 'Lyly',
+            name: 'Pam',
             sex: 'female',
             breed: 'lhasa',
             age: 'puppy',
@@ -52,7 +52,7 @@ const dummyData = {
         },
         {
             id: 6,
-            name: 'Lyly',
+            name: 'Lacey',
             sex: 'female',
             breed: 'akita',
             age: 'puppy',
@@ -64,39 +64,39 @@ const dummyData = {
     cats: [
         {
             id: 7,
-            name: 'Lyly',
+            name: 'Gracie',
             sex: 'female',
-            breed: 'husky',
+            breed: 'Domestic Longhair',
             age: 'kitten',
             location: 'San Jose, CA',
             description: 'cute girl',
-            url: 'https://cdn2.thecatapi.com/images/asl.jpg'
+            url: 'https://i.pinimg.com/originals/de/62/4b/de624b917242f6062d7bdd51fa0cb916.jpg'
         },
         {
             id: 8,
-            name: 'Lyly',
+            name: 'Garth',
             sex: 'male',
-            breed: 'doberman',
+            breed: 'American Shorthair',
             age: 'senior',
             location: 'San Jose, CA',
             description: 'cute guy',
-            url: 'https://cdn2.thecatapi.com/images/MTY1NjQ1Mg.jpg'
+            url: 'https://www.lostmykitty.com/pet_images_lmk/66649.jpg'
         },
         {
             id: 9,
-            name: 'Lyly',
+            name: 'Shela',
             sex: 'female',
-            breed: 'domestic medium hair',
+            breed: 'Domestic Mediumhair',
             age: 'young',
             location: 'San Jose, CA',
             description: 'cute girl',
-            url: 'https://cdn2.thecatapi.com/images/A44EkB-zi.jpg'
+            url: 'https://www3.pictures.itsrosy.com/mp/i_AlaZqHw45l.jpg'
         },
         {
             id: 10,
-            name: 'Lyly',
+            name: 'Ivy',
             sex: 'female',
-            breed: 'terrier-bedlington',
+            breed: 'Domestic Shorthair',
             age: 'young',
             location: 'San Jose, CA',
             description: 'cute girl',
@@ -104,23 +104,23 @@ const dummyData = {
         },
         {
             id: 11,
-            name: 'Lyly',
-            sex: 'female',
-            breed: 'lhasa',
+            name: 'Gigi',
+            sex: 'male',
+            breed: 'Siamese Mix',
             age: 'senior',
             location: 'San Jose, CA',
             description: 'cute girl',
-            url: 'https://static.standard.co.uk/2021/06/21/14/newFile.jpg?width=968&auto=webp&quality=75&crop=968%3A645%2Csmart'
+            url: 'https://www.petmd.com/sites/default/files/Siamese.jpg'
         },
         {
             id: 12,
-            name: 'Lyly',
-            sex: 'female',
-            breed: 'akita',
+            name: 'Conner',
+            sex: 'male',
+            breed: 'Maine Coon',
             age: 'young',
             location: 'San Jose, CA',
             description: 'cute girl',
-            url: 'https://c.ndtvimg.com/2020-08/1cvf367_yellow-cat_625x300_25_August_20.jpg'
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Maine_Coon_female_2_%28retouched%29.jpg/170px-Maine_Coon_female_2_%28retouched%29.jpg'
         },
     ],
     others: []

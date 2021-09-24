@@ -1,9 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import dummyData from '../services/dummyData';
 import { fetchCats, fetchDogs } from '../actions';
-import Pet from './Pet';
+
+function Pet(props) {
+    const { name, url} = props.pet;
+    return (
+        <div className='card'>
+            <div><img src={url} alt='pet' /></div>
+            <div>{name}</div>
+        </div>
+    )
+}
 
 function Home(props) {
     const { fetchCats, fetchDogs } = props;
@@ -48,11 +57,20 @@ function Home(props) {
             </div>
             <div className='pet-images-container'>
                 <div id='pets-list'>
-                    <h1>Meet Our Available Pets</h1>
+                    <div>
+                        <h1>Meet Our Available Pets</h1>
+                    </div>
                     <div id='pet-cards-container'>
-                        {cats.filter((cat, index) => index < 2).map(item => (<Pet keys={item.id} pet={item}/>))}
-                        {dogs.filter((dog, index) => index < 2).map(item => (<Pet keys={item.id} pet={item}/>))}
-
+                        {cats.filter((cat, index) => index < 2).map(item => (<Pet key={item.id} pet={item} />))}
+                        {dogs.filter((dog, index) => index < 2).map(item => (<Pet key={item.id} pet={item} />))}
+                        <div className='card card-5'>
+                            <div style={{color: 'white'}}>
+                                {cats.length + dogs.length} more pets available on Adopt Me
+                            </div>
+                            <div style={{color: 'white'}}>
+                                See More
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -77,4 +95,4 @@ const mapStateToProps = state => {
     })
 }
 
-export default connect(mapStateToProps, {fetchDogs, fetchCats})(Home);
+export default connect(mapStateToProps, { fetchDogs, fetchCats })(Home);
