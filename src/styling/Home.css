@@ -72,7 +72,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e9ecef;
+    background-color: #e5e5e5;
 }
 .pet-care {
     position: absolute;
@@ -139,7 +139,7 @@ h1 {
 /************** PET IMAGES *************/
 .pet-images-container {
     width: 100%;
-    background-color: #e9ecef;
+    background-color: #e5e5e5;
 }
 
 #pets-list {
@@ -149,7 +149,7 @@ h1 {
     align-items: space-between;
     width: 1200px;
     margin: 0 auto;
-    padding-bottom: 3%;
+    padding: 2% 0 6% 0;
 }
 
 #pets-list div h1 {
@@ -167,12 +167,16 @@ h1 {
     border-radius: 10px;
     background-color: #fff;
     height: 250px;
-    box-shadow: 0 5px 5px 5px #ced4da;
+    /* box-shadow: 0 5px 5px 5px #ced4da; */
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    position: relative;
+    cursor: pointer;
 }
 
-.card div:nth-child(2) {
-    padding-top: 8px;
+.card:hover {
+    opacity: 0.95;
 }
+
 
 .card div img {
     width: 100%;
@@ -210,4 +214,169 @@ h1 {
 .card-5 div:nth-child(2) {
     padding: 15px 0 0 0;
 }
+
+.card-pet-name::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 72%;
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    border-radius: 50% 50% 0 0 ;
+}
+/************ PLANNING ADOPTION ************/
+.planning-adoption-container {
+    width: 100%;
+}
+
+.planning-adoption {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 3% 0 1% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.planning-adoption h2 {
+    font-size: 1.5rem;
+    padding: 0 0 2% 0;
+}
+
+.planning-adoption-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planning-adoption-cards > * {
+    flex-basis: 100%;
+}
+
+.planning-adoption-card {
+    padding: 4%;
+    text-align: center;
+}
+
+.planning-adoption-card h2 {
+    font-size: 1.3rem;
+    color: #01497c
+}
+
+.planning-adoption-card p {
+    font-size: 0.9rem;
+    line-height: 25px;
+    color: #6c757d;
+}
+
+.planning-adoption-card div button {
+    border-radius: 30px;
+    padding: 12px 25px;
+    margin: 30px 0 0 0;
+    border-color: #168aad;
+    background-color: #fff;
+    color: #01497c;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.planning-adoption-card div button:hover {
+    background-color: #168aad;
+    color: #fff;
+}
+
+/************ ADOPTION ARTICLES *************/
+.articles-container {
+    width: 100%;
+    background-color: #e5e5e5;
+    padding: 3% 0;
+}
+
+.articles {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article {
+    width: 49%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+
+.article:hover {
+    opacity: 0.95;
+}
+
+.article-img-1 {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    filter: brightness(70%);
+    position: relative;
+}
+
+.article-img-2 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    z-index: 1;
+}
+
+.article-text::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 200px;
+    background: #fff;
+    height: 50px;
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    height: 200px;
+    padding-bottom: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.article-text p {
+    font-size: 1rem;
+}
+
+.article-text div:first-child {
+    padding: 20px;
+}
+
+.article-text div:nth-child(2) {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-top: solid rgba(73, 80, 87, 0.5) 1px;
+    padding-top: 15px;
+}
+
+
 
