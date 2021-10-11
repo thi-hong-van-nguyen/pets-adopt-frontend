@@ -4,7 +4,6 @@
     margin: 0 auto;
 }
 
-
 /********* TOP CONTENT ***********/
 
 .get-started-container {
@@ -39,8 +38,7 @@
     padding: 3% 0 0 0;
 }
 
-.get-started h1,
-.get-started div {
+.get-started h1, .get-started div {
     color: white;
     text-shadow: 2px 2px rgba(247, 127, 0, 0.5);
     padding: 0 0 0.5% 0;
@@ -65,7 +63,6 @@ h1 {
     opacity: 0.9;
     transform: scale(1.1);
 }
-
 
 /************** pet-care-container *****************/
 
@@ -126,8 +123,7 @@ h1 {
     text-align: center;
 }
 
-#pet-care-3,
-#pet-care-4 {
+#pet-care-3, #pet-care-4 {
     flex: 1;
     height: 100%;
     padding: 1%;
@@ -141,7 +137,6 @@ h1 {
     color: #fff;
     transform: scaleX(-1)
 }
-
 
 /************** PET IMAGES *************/
 
@@ -193,8 +188,7 @@ h1 {
     border-top-right-radius: 10px;
 }
 
-#pets-list div,
-#pets-list h1 {
+#pets-list div, #pets-list h1 {
     color: rgba(247, 62, 0, 1);
     text-align: center;
 }
@@ -233,7 +227,6 @@ h1 {
     background: #fff;
     border-radius: 50% 50% 0 0;
 }
-
 
 /************ PLANNING ADOPTION ************/
 
@@ -297,7 +290,6 @@ h1 {
     background-color: #168aad;
     color: #fff;
 }
-
 
 /************ ADOPTION ARTICLES *************/
 
@@ -391,7 +383,6 @@ h1 {
     padding-top: 15px;
 }
 
-
 /********** SMALL DEVICES ***************/
 
 @media (max-width: 1200px) {
@@ -409,8 +400,7 @@ h1 {
     #pet-care-2 {
         padding: 0 0 5px 20px;
     }
-    #pet-care-3,
-    #pet-care-4 {
+    #pet-care-3, #pet-care-4 {
         padding-top: 30px;
     }
     .fas {
@@ -439,4 +429,16 @@ h1 {
     }
 }
 
-@media (max-width: 750px) {}
+@media (max-width: 750px) {
+    #get-started-text h1 {
+        font-size: 1.5rem
+    }
+    #get-started-text {
+        height: 100%;
+        width: 100%;
+        padding: 10% 0 0 0;
+    }
+    #get-started-text {
+        text-align: center;
+    }
+}

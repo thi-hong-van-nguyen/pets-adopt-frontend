@@ -93,7 +93,7 @@ function Home(props) {
                         </div>
                         <div className='planning-adoption-card planning-adoption-card-2'>
                             <h2>Resources</h2>
-                            <p>Get the latest on adoption processes, <br/>learn how local shelters and rescue groups are adapting and find out what you can do to help dogs and cats in need right now.</p>
+                            <p>Get the latest on adoption processes, <br />learn how local shelters and rescue groups are adapting and find out what you can do to help dogs and cats in need right now.</p>
                             <div>
                                 <button>LEARN MORE</button>
                             </div>

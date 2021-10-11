@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
+    const [display, setDisplay] = useState(false)
+
     return (
         <header>
             <div className='header'>
@@ -19,7 +21,9 @@ export default function Header() {
                         <span id='slogan-5'>Another</span>
                     </div>
                 </div>
-                <div className='nav-links'>
+                <div></div>
+                <div className={display ? 'nav-links display-menu' : 'nav-links'} >
+                    <i className="fa fa-close" onClick={() => setDisplay(false)}></i>
                     <ul>
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/dogs'>Dogs</Link></li>
@@ -32,9 +36,14 @@ export default function Header() {
                     <ul>
                         <li id='login'><Link to='/login'>Log in</Link></li>
                         <li id='signup'><Link to='/signup'>Sign up</Link></li>
-                       {/* <li id='logout'><Link to='/logout'>Log out</Link></li>
+                        {/* <li id='logout'><Link to='/logout'>Log out</Link></li>
                        <li id='login-as'>Logged in as ________</li> */}
                     </ul>
+                </div>
+                <div id='menubar' onClick={() => setDisplay(!display)}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
         </header>

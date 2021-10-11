@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
 header {
     width: 100%;
 }
@@ -12,7 +11,6 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .logo-slogan-container {
     display: flex;
@@ -43,7 +41,7 @@ header {
     font-size: 1.2rem;
 }
 
-#slogan-1, #slogan-3, #slogan-5{
+#slogan-1, #slogan-3, #slogan-5 {
     color: rgba(245, 53, 5, 1)
 }
 
@@ -51,10 +49,18 @@ header {
     color: rgba(247, 127, 0, 1)
 }
 
-
 /***** nav links ***********/
+
 .nav-links {
     flex: 1;
+}
+
+.fa-close {
+    display: none;
+}
+
+#menubar {
+    display: none;
 }
 
 .nav-links ul {
@@ -63,7 +69,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 10px;;
+    margin-top: 10px;
+    ;
 }
 
 .nav-links ul li {
@@ -78,13 +85,12 @@ header {
     font-size: 1rem;
 }
 
-
 .nav-links ul li a::after {
     content: '';
     display: block;
     height: 7px;
     width: 0%;
-    background:linear-gradient(rgba(245, 53, 5, 1), rgba(245, 53, 5, 0.8), rgba(245, 53, 5, 0.6));
+    background: linear-gradient(rgba(245, 53, 5, 1), rgba(245, 53, 5, 0.8), rgba(245, 53, 5, 0.6));
     transition: 0.3s
 }
 
@@ -93,10 +99,11 @@ header {
     display: block;
     height: 7px;
     width: 100%;
-    background:(rgba(245, 53, 5, 1), rgba(245, 53, 5, 0.8), rgba(245, 53, 5, 0.6))
+    background: (rgba(245, 53, 5, 1), rgba(245, 53, 5, 0.8), rgba(245, 53, 5, 0.6))
 }
 
 /*************** LOG IN, LOG OUT MENU **********/
+
 .login-logout-menu {
     display: flex;
     width: 28%;
@@ -104,14 +111,14 @@ header {
     align-items: center;
 }
 
-.login-logout-menu ul{
+.login-logout-menu ul {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-.login-logout-menu ul li{
+.login-logout-menu ul li {
     list-style: none;
     border: #f8961e;
     background-color: #f8961e;
@@ -121,7 +128,7 @@ header {
     /* box-shadow: 0 5px 5px 5px rgba(255, 145, 0, 0.1); */
 }
 
-.login-logout-menu ul li:nth-child(2){
+.login-logout-menu ul li:nth-child(2) {
     border: #f3722c;
     background-color: #f3722c;
     color: #ae2012;
@@ -132,28 +139,96 @@ header {
     transform: scale(1.1);
 }
 
-.login-logout-menu ul li a{
+.login-logout-menu ul li a {
     text-decoration: none;
     color: inherit;
     font-size: 0.8rem;
 }
 
-#login-as{
+#login-as {
     font-size: 0.8rem;
     color: #ae2012;
     background-color: white;
 }
 
 /******************** SMALL DEVICES ************************/
+
 @media (max-width: 1200px) {
     #slogan span {
         font-size: 0.9rem;
     }
 }
 
-
-
-
-
-
-
+@media (max-width: 750px) {
+    header {
+        height: 60px;
+    }
+    .nav-links {
+        display: none;
+    }
+    #slogan {
+        display: none;
+    }
+    .header {
+        position: relative
+    }
+    .fa-close {
+        display: block;
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+    .display-menu {
+        display: block;
+        position: absolute;
+        width: 30%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: white;
+        z-index: 99;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .nav-links ul li {
+        padding: 10px 0;
+        border-bottom: solid rgba(33, 33, 32, 0.5) 2px;
+        width: 80%;
+    }
+    .login-logout-menu {
+        padding-top: 10px;
+    }
+    .login-logout-menu ul li {
+        margin-right: 20px;
+    }
+    .logo-slogan-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 60px;
+        width: 200px
+    }
+    .logo-slogan-container div {
+        padding: 0 10px;
+    }
+    #menubar {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 98;
+        width: 50px;
+        height: 40px;
+        padding: 1% 1% 0 0;
+    }
+    #menubar div {
+        width: 80%;
+        height: 8px;
+        background-color: rgba(33, 33, 32, 0.8);
+        margin: 5px
+    }
+}
