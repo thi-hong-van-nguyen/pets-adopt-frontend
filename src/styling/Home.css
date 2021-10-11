@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
-
 #main {
     width: 100vw;
     margin: 0 auto;
 }
 
+
 /********* TOP CONTENT ***********/
-.get-started-container{
+
+.get-started-container {
     width: 100%;
     height: 350px;
     position: relative;
@@ -38,7 +39,8 @@
     padding: 3% 0 0 0;
 }
 
-.get-started h1, .get-started div {
+.get-started h1,
+.get-started div {
     color: white;
     text-shadow: 2px 2px rgba(247, 127, 0, 0.5);
     padding: 0 0 0.5% 0;
@@ -64,7 +66,9 @@ h1 {
     transform: scale(1.1);
 }
 
+
 /************** pet-care-container *****************/
+
 .pet-care-container {
     width: 100%;
     height: 100px;
@@ -74,6 +78,7 @@ h1 {
     align-items: center;
     background-color: #e5e5e5;
 }
+
 .pet-care {
     position: absolute;
     width: 1200px;
@@ -121,7 +126,8 @@ h1 {
     text-align: center;
 }
 
-#pet-care-3, #pet-care-4 {
+#pet-care-3,
+#pet-care-4 {
     flex: 1;
     height: 100%;
     padding: 1%;
@@ -136,7 +142,9 @@ h1 {
     transform: scaleX(-1)
 }
 
+
 /************** PET IMAGES *************/
+
 .pet-images-container {
     width: 100%;
     background-color: #e5e5e5;
@@ -177,7 +185,6 @@ h1 {
     opacity: 0.95;
 }
 
-
 .card div img {
     width: 100%;
     height: 200px;
@@ -186,7 +193,8 @@ h1 {
     border-top-right-radius: 10px;
 }
 
-#pets-list div, #pets-list h1 {
+#pets-list div,
+#pets-list h1 {
     color: rgba(247, 62, 0, 1);
     text-align: center;
 }
@@ -223,9 +231,12 @@ h1 {
     width: 100%;
     height: 20px;
     background: #fff;
-    border-radius: 50% 50% 0 0 ;
+    border-radius: 50% 50% 0 0;
 }
+
+
 /************ PLANNING ADOPTION ************/
+
 .planning-adoption-container {
     width: 100%;
 }
@@ -251,7 +262,7 @@ h1 {
     align-items: center;
 }
 
-.planning-adoption-cards > * {
+.planning-adoption-cards>* {
     flex-basis: 100%;
 }
 
@@ -287,7 +298,9 @@ h1 {
     color: #fff;
 }
 
+
 /************ ADOPTION ARTICLES *************/
+
 .articles-container {
     width: 100%;
     background-color: #e5e5e5;
@@ -355,7 +368,7 @@ h1 {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     height: 200px;
     padding-bottom: 20px;
     line-height: 30px;
@@ -379,4 +392,51 @@ h1 {
 }
 
 
+/********** SMALL DEVICES ***************/
 
+@media (max-width: 1200px) {
+    /********* PET CARE ***********/
+    .pet-care {
+        width: 750px;
+    }
+    .pet-care a {
+        font-size: 0.9rem;
+        padding: 0 2% 0 2%
+    }
+    .pet-care a:first-child {
+        padding: 5% 0 0 5%;
+    }
+    #pet-care-2 {
+        padding: 0 0 5px 20px;
+    }
+    #pet-care-3,
+    #pet-care-4 {
+        padding-top: 30px;
+    }
+    .fas {
+        font-size: 30px;
+    }
+    /************* PET IMAGES ************/
+    #pets-list {
+        width: 750px;
+        padding: 0 1% 0 1%
+    }
+    .pet-images-container {
+        height: 350px;
+    }
+    /************ PLANNING ADOPTION *******/
+    .planning-adoption {
+        width: 750px;
+        padding: 0 1% 0 1%
+    }
+    /************ ARTICLES ****************/
+    .articles {
+        width: 750px;
+        padding: 0 1% 0 1%
+    }
+    .article-text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 750px) {}
