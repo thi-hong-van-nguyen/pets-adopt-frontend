@@ -174,7 +174,7 @@ header {
     }
     .fa-close {
         display: block;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         padding: 1%;
     }
     .display-menu {
@@ -198,6 +198,10 @@ header {
         padding: 10px 0;
         border-bottom: solid rgba(33, 33, 32, 0.5) 2px;
         width: 80%;
+    }
+    .nav-links ul li a {
+        padding: 10px 0;
+        font-size: 2rem;
     }
     .login-logout-menu {
         padding-top: 10px;
@@ -223,7 +227,7 @@ header {
         z-index: 98;
         width: 50px;
         height: 40px;
-        padding: 1% 1% 0 0;
+        padding: 1%;
     }
     #menubar div {
         width: 80%;

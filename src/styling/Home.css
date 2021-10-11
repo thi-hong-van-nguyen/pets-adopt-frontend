@@ -427,6 +427,17 @@ h1 {
     .article-text p {
         font-size: 0.8rem;
     }
+    .article-img-2 {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 100%;
+        border: 12px solid #fff;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        z-index: 1;
+    }
 }
 
 @media (max-width: 750px) {
@@ -440,5 +451,14 @@ h1 {
     }
     #get-started-text {
         text-align: center;
+    }
+    .pet-care, #pets-list, .planning-adoption, .articles {
+        width: 600px;
+    }
+    .article-text div:first-child {
+        padding: 5px;
+    }
+    .article-text div:nth-child(2) {
+        padding-bottom: 2%;
     }
 }
